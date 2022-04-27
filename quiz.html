@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styling.css" type="text/css" />
+    <script src="coding.js"></script>
+</head>
+
+<style>
+    .content{
+        text-align: left;
+        padding: 10px;
+    }
+    h1{
+        font-size:20px;
+    }
+    h2{
+        font-weight: normal;
+        font-style: italic;
+    }
+    p{
+        margin-top: 0;
+    }
+    a.customVisited:visited{
+        color:orange;
+    }
+    a.customHover:hover{
+        color:greenyellow;
+    }
+    a.customActive:active{
+        color:lightblue;
+    }
+    a.noChange:visited{
+        color:blue;
+    }
+</style>
+<script>
+    function printYes(){
+        console.log("yes!");
+    }
+    function printNo(){
+        console.log("nope.");
+    }
+</script>
+
+<body>
+    <div class="grid-container">
+
+        <div class="navigation">
+            <nav id="navbar">
+                <a href="index.html"><img id="logo" alt="OddWebOut" src="images/logo.png"></a>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Introduction</h1>
+            <p class="intro">This quiz features questions with elements that were modified using web design elements. Find which of the four options provided stands out from the rest and choose that as the answer. Good luck!</p>
+        </div>
+        <div class="content">
+            <h1>The warm-up: Easy questions</h1>
+            <h2>Question 1</h2>
+            <form>
+                <!--q1c1 refers to question 1, choice 1, and so on -->
+                <input type="radio" name="question1" id="q1c1" value="incorrect">
+                <label for="q1c1">This one!</label><br>
+                <input type="radio" name="question1" id="q1c2" value="incorrect">
+                <label for="q1c2">This one!</label><br>
+                <input type="radio" name="question1" id="q1c3" value="incorrect">
+                <label for="q1c3">This one!</label><br>
+                <input type="radio" name="question1" id="q1c4" value="correct">
+                <label for="q1c4">That one!</label><br>
+            </form>
+
+            <h2>Question 2</h2>
+            <form>
+                <input type="radio" name="question2" id="q2c1" value="incorrect">
+                <label for="q2c1">This one!</label><br>
+                <input type="radio" name="question2" id="q2c2" value="incorrect">
+                <label for="q2c2">This one!</label><br>
+                <input type="radio" name="question2" id="q2c3" value="correct">
+                <label for="q2c3" style="font-style: italic;">This one!</label><br>
+                <input type="radio" name="question2" id="q2c4" value="incorrect">
+                <label for="q2c4">This one!</label><br>
+            </form>
+
+            <h2>Question 3</h2>
+            <form>
+                <input type="radio" name="question3" id="q3c1" value="incorrect">
+                <label for="q3c1">This one!</label><br>
+                <input type="radio" name="question3" id="q3c2" value="correct">
+                <label for="q3c2" style="font-weight: bold;">This one!</label><br>
+                <input type="radio" name="question3" id="q3c3" value="incorrect">
+                <label for="q3c3">This one!</label><br>
+                <input type="radio" name="question3" id="q3c4" value="incorrect">
+                <label for="q3c4">This one!</label><br>
+            </form>
+
+            <h2>Question 4</h2>
+            <form>
+                <input type="radio" name="question4" id="q4c1" value="incorrect">
+                <label for="q4c1">This one!</label><br>
+                <input type="radio" name="question4" id="q4c2" value="incorrect">
+                <label for="q4c2">This one!</label><br>
+                <input type="radio" name="question4" id="q4c3" value="correct">
+                <label for="q4c3" style="writing-mode: vertical-lr;">This one!</label><br>
+                <input type="radio" name="question4" id="q4c4" value="incorrect">
+                <label for="q4c4">This one!</label><br>
+            </form>
+
+            <h2>Question 5</h2>
+            <form>
+                <input type="radio" name="question5" id="q5c1" value="incorrect">
+                <label for="q5c1">This one!</label><br>
+                <input type="radio" name="question5" id="q5c2" value="correct">
+                <label for="q5c2" style="border: double;">This one!</label><br>
+                <input type="radio" name="question5" id="q5c3" value="incorrect">
+                <label for="q5c3">This one!</label><br>
+                <input type="radio" name="question5" id="q5c4" value="incorrect">
+                <label for="q5c4">This one!</label><br>
+            </form>
+        </div>
+        <div class="content">
+            <h1>The real deal: Hard questions</h1>
+            <h2>Question 6</h2>
+            <form>
+                <input type="radio" name="question6" id="q6c1" value="correct">
+                <label for="q6c1"><a href="#">This one!</a></label><br>
+                <input type="radio" name="question6" id="q6c2" value="incorrect">
+                <label for="q6c2">This one!</label><br>
+                <input type="radio" name="question6" id="q6c3" value="incorrect">
+                <label for="q6c3">This one!</label><br>
+                <input type="radio" name="question6" id="q6c4" value="incorrect">
+                <label for="q6c4">This one!</label><br>
+            </form>
+
+            <h2>Question 7</h2>
+            <form>
+                <input type="radio" name="question7" id="q7c1" value="incorrect">
+                <label for="q7c1"><a href="#">This one!</a></label><br>
+                <input type="radio" name="question7" id="q7c2" value="correct">
+                <label for="q7c2"><a href="#" class="customVisited">This one!</a></label><br>
+                <input type="radio" name="question7" id="q7c3" value="incorrect">
+                <label for="q7c3"><a href="#">This one!</a></label><br>
+                <input type="radio" name="question7" id="q7c4" value="incorrect">
+                <label for="q7c4"><a href="#">This one!</a></label><br>
+            </form>
+
+            <h2>Question 8</h2>
+            <form>
+                <input type="radio" name="question8" id="q8c1" value="correct">
+                <label for="q8c1"><a href="#" class="customHover">This one!</a></label><br>
+                <input type="radio" name="question8" id="q8c2" value="incorrect">
+                <label for="q8c2""><a href="#">This one!</a></label><br>
+                <input type="radio" name="question8" id="q8c3" value="incorrect">
+                <label for="q8c3"><a href="#">This one!</a></label><br>
+                <input type="radio" name="question8" id="q8c4" value="incorrect">
+                <label for="q8c4"><a href="#">This one!</a></label><br>
+            </form>
+
+            <h2>Question 9</h2>
+            <form>
+                <input type="radio" name="question9" id="q9c1" value="incorrect">
+                <label for="q9c1"><a href="#">This one!</a></label><br>
+                <input type="radio" name="question9" id="q9c2" value="incorrect">
+                <label for="q9c2"><a href="#">This one!</a></label><br>
+                <input type="radio" name="question9" id="q9c3" value="correct">
+                <label for="q9c3"><a href="#" class="customActive">This one!</a></label><br>
+                <input type="radio" name="question9" id="q9c4" value="incorrect">
+                <label for="q9c4"><a href="#">This one!</a></label><br>
+            </form>
+
+            <h2>Question 10</h2>
+            <form>
+                <input type="radio" name="question10" id="q10c1" value="incorrect">
+                <label for="q10c1"><a href="q10p1.html" target="_blank">This one!</a></label><br>
+                <input type="radio" name="question10" id="q10c2" value="incorrect">
+                <label for="q10c2""><a href="q10p2.html" target="_blank">This one!</a></label><br>
+                <input type="radio" name="question10" id="q10c3" value="correct">
+                <label for="q10c3"><a href="q10p3.html" target="_blank">This one!</a></label><br>
+                <input type="radio" name="question10" id="q10c4" value="incorrect">
+                <label for="q10c4"><a href="q10p4.html" target="_blank">This one!</a></label><br>
+            </form>
+        </div>
+        <div class="content">
+            <h1>Gloves off: Extreme questions</h1>
+            <h2>Question 11</h2>
+            <form>
+                <input type="radio" name="question11" id="q11c1" value="incorrect">
+                <label for="q11c1"><a href="duck.html" target="_blank" class="noChange">This one!</a></label><br>
+                <input type="radio" name="question11" id="11c2" value="correct">
+                <label for="11c2""><a href="goose.html" target="_blank" class="noChange">This one!</a></label><br>
+                <input type="radio" name="question11" id="q11c3" value="incorrect">
+                <label for="q11c3"><a href="duck.html" target="_blank" class="noChange">This one!</a></label><br>
+                <input type="radio" name="question11" id="q11c4" value="incorrect">
+                <label for="q11c4"><a href="duck.html" target="_blank" class="noChange">This one!</a></label><br>
+            </form>
+
+            <h2>Question 12</h2>
+            <form>
+                <input type="radio" name="question12" id="q12c1" value="incorrect">
+                <label for="q12c1"><a href="q12p1.html">This one!</a></label><br>
+                <input type="radio" name="question12" id="q12c2" value="incorrect">
+                <label for="q12c2"><a href="q12p2.html">This one!</a></label><br>
+                <input type="radio" name="question12" id="q12c3" value="incorrect">
+                <label for="q12c3"><a href="q12p3.html">This one!</a></label><br>
+                <input type="radio" name="question12" id="q12c4" value="correct">
+                <label for="q12c4"><a href="q12p4.html">This one!</a></label><br>
+            </form>
+
+            <h2>Question 13</h2>
+            <form>
+                <input type="radio" name="question13" id="q13c1" value="incorrect">
+                <label for="q13c1"><button onclick="printNo()">This one!</button></label><br>
+                <input type="radio" name="question13" id="q13c2" value="incorrect">
+                <label for="q13c2"><button onclick="printNo()">This one!</button></label><br>
+                <input type="radio" name="question13" id="q13c3" value="incorrect">
+                <label for="q13c3"><button onclick="printYes()">This one!</a></button></label><br>
+                <input type="radio" name="question13" id="q13c4" value="correct">
+                <label for="q13c4"><button onclick="printNo()">This one!</button></label><br>
+            </form>
+
+            <h2>Question 14</h2>
+            <form style="font-size: 1px;">
+                <input type="radio" name="question 14" id="q14c1" value="incorrect">
+                <label for="q14c1">This one!</label><br>
+                <input type="radio" name="question 14" id="q14c2" value="correct">
+                <label for="q14c2">This one!</label><br>
+                <input type="radio" name="question 14" id="q14c3" value="incorrect">
+                <label for="q14c3">This one!</label><br>
+                <input type="radio" name="question 14" id="q14c4" value="incorrect">
+                <label for="q14c4">Thls one!</label><br>
+            </form>
+
+            <h2>Question 15</h2>
+            <form style="font-size: 1px;">
+                <input type="radio" name="question 15" id="q15c1" value="incorrect">
+                <label for="q15c1"></label><br>
+                <input type="radio" name="question 15" id="q15c2" value="correct">
+                <label for="q15c2"></label><br>
+                <input type="radio" name="question 15" id="q15c3" value="incorrect">
+                <label for="q15c3"></label><br>
+                <input type="radio" name="question 15" id="q15c4" value="incorrect">
+                <label for="q15c4"></label><br>
+            </form>
+        </div>
+
+    </div>
+    <marquee behavior=scroll direction="left" scrollamount="100">bruh</marquee>
+</body>
+
+</html>
