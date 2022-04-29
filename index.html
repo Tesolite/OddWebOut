@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styling.css" type="text/css" />
-    <script src="coding.js"></script>
+    <link rel="stylesheet" href="/stylesheets/styling.css" type="text/css" id="webstyle"/>
+    <script src="/scripts/coding.js"></script>
 </head>
 
-<body>
+<body onload="loadOptions()">
     <div class="grid-container">
         
         <div class="navigation">
@@ -16,15 +16,21 @@
             </nav>
         </div>
         <div class="content">
-                <button id="btnstart" class="menubuttons" onclick="startQuiz()">📖 | Start the quiz! | 📖</button>
-                <button id="btnoptions" class="menubuttons">🔧 | Options | 🔧</button>
-                <button class="menubuttons"> 🔎 | Mysterious button | 🔍</button>
+                <button type="button" id="btnstart" class="menubuttons" onclick="startQuiz()">📖 | Start the quiz!</button>
+                <button type="button" id="btnoptions" class="menubuttons" onclick="showOptions()">🔧 | Options</button>
+                <button type="button" id="btnmystery" class="menubuttons" onclick="colourfulSecret()"> 🔎 | Mysterious button</button>
         </div>
-        <div class="options">
+        <div id="options" style="display: none;">
+            <form class="settings">
+                <input type="checkbox" id="dyslexia">
+                <label for="dyslexia">Dyslexic font</label><br>
+                <input type="checkbox" id="darkmode">
+                <label for="darkmode">Dark mode</label><br>
+                <button type="button" id="saveoptions" onclick="saveOptions()">Save</button>
+            </form>
 
         </div>
     </div>
-    <marquee behavior=scroll direction="left" scrollamount="100">bruh</marquee>
 </body>
 
 </html>

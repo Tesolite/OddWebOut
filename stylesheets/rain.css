@@ -1,0 +1,192 @@
+@font-face {
+    font-family: OpenDyslexic;
+    src: url(fonts/OpenDyslexic/OpenDyslexic-Regular.woff) format("woff"),
+        url(fonts/OpenDyslexic/OpenDyslexic-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: OpenDyslexic;
+    src: url(fonts/OpenDyslexic/OpenDyslexic-Bold.woff) format("woff"),
+        url(fonts/OpenDyslexic/OpenDyslexic-Bold.woff2) format("woff2");
+
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: OpenDyslexic;
+    src: url(fonts/OpenDyslexic/OpenDyslexic-Italic.woff) format("woff"), url(fonts/OpenDyslexic/OpenDyslexic-Italic.woff2) format("woff2");
+
+    font-style: italic;
+}
+
+@font-face {
+    font-family: OpenDyslexic;
+    src: url(fonts/OpenDyslexic/OpenDyslexic-Bold-Italic.woff) format("woff"), url(fonts/OpenDyslexic/OpenDyslexic-Bold-Italic.woff2) format("woff2");
+
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+* {
+    font-size: 100%;
+    font-family: OpenDyslexic;
+    color: rgba(255, 255, 255, 0.815);
+
+}
+a{
+    color: rgb(0, 253, 198);
+}
+a:visited{
+    color: rgb(131, 2, 131);
+}
+a:active{
+    color: rgb(250, 110, 110);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 33% 34% 33%;
+    grid-gap: 30px;
+}
+
+.navigation {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(155, 155, 155);
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3%;
+}
+
+.content {
+    grid-column-start: 2;
+    background-color: rgba(255, 255, 255, 0.432);
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 13px 7px rgba(0, 0, 0, 0.10);
+
+}
+
+
+.menubuttons {
+    margin: 50px;
+    padding: 25px 50px;
+    background-color: rgba(30, 33, 37, 0.582);
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#options {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    max-width: 30%;
+    max-height: 50%;
+    align-self: center;
+    padding: 5%;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 13px 7px rgba(0, 0, 0, 0.10);
+}
+
+.settings {
+    font-size: 20px;
+}
+
+#saveoptions{
+    margin-top: 15px;
+    padding: 7px 20px;
+    background-color: rgba(30, 33, 37, 0.582);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    float: right;
+}
+#saveoptions:hover{
+    background: linear-gradient(rgba(30, 33, 37, 0.226), rgba(31, 39, 43, 0.75));
+    animation: changeColour 2s, rainbowz 1s infinite;
+    animation-fill-mode: forwards;
+}
+
+.menubuttons:hover {
+    background: linear-gradient(rgba(30, 33, 37, 0.05), rgba(31, 39, 43, 0.75));
+    animation: changeColour 2s, rainbowz 2s infinite;
+    animation-fill-mode: forwards;
+}
+
+.menubuttons:active {
+    background: rgb(31, 39, 43);
+}
+
+@keyframes changeColour {
+    from {
+        background-color: inherit, inherit, inherit, 0.75;
+    }
+
+    to {
+        background-color: rgb(31, 39, 43);
+    }
+}
+
+.q13button{
+    background: rgb(56, 61, 63);
+}
+#submitquiz{
+    color:white;
+    background-color: rgb(56, 61, 63);
+    padding: 5px;;
+}
+
+@keyframes rainbowz {
+    0% {color: red;}
+    7% {color: orange;}
+    15% {color: yellow;}
+    22% {color: rgb(7, 219, 7);}
+    30% {color: blue;}
+    37% {color: indigo;}
+    45% {color: violet;}
+    53% {color: violet;}
+    60% {color: indigo;}
+    67% {color: blue;}
+    75% {color: rgb(7, 219, 7);}
+    83% {color: yellow;}
+    91% {color: orange;}
+    100% {color: red;}
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 10px;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(30, 33, 37);
+    max-width: 100%;
+    overflow-x: hidden;
+}

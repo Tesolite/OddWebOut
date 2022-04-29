@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styling.css" type="text/css" />
-    <script src="coding.js"></script>
+    <link rel="stylesheet" href="/stylesheets/styling.css" type="text/css" id="webstyle"/>
+    <script src="/scripts/coding.js"></script>
 </head>
 
 <style>
@@ -44,7 +44,7 @@
     }
 </script>
 
-<body>
+<body onload="loadOptions()">
     <div class="grid-container">
 
         <div class="navigation">
@@ -124,7 +124,7 @@
             <h2>Question 6</h2>
             <form>
                 <input type="radio" name="question6" id="q6c1" value="correct">
-                <label for="q6c1"><a href="#">This one!</a></label><br>
+                <label for="q6c1"><a href="#;">This one!</a></label><br>
                 <input type="radio" name="question6" id="q6c2" value="incorrect">
                 <label for="q6c2">This one!</label><br>
                 <input type="radio" name="question6" id="q6c3" value="incorrect">
@@ -136,37 +136,37 @@
             <h2>Question 7</h2>
             <form>
                 <input type="radio" name="question7" id="q7c1" value="incorrect">
-                <label for="q7c1"><a href="#">This one!</a></label><br>
+                <label for="q7c1"><a href="#;">This one!</a></label><br>
                 <input type="radio" name="question7" id="q7c2" value="correct">
-                <label for="q7c2"><a href="#" class="customVisited">This one!</a></label><br>
+                <label for="q7c2"><a href="#;" class="customVisited">This one!</a></label><br>
                 <input type="radio" name="question7" id="q7c3" value="incorrect">
-                <label for="q7c3"><a href="#">This one!</a></label><br>
+                <label for="q7c3"><a href="#;">This one!</a></label><br>
                 <input type="radio" name="question7" id="q7c4" value="incorrect">
-                <label for="q7c4"><a href="#">This one!</a></label><br>
+                <label for="q7c4"><a href="#;">This one!</a></label><br>
             </form>
 
             <h2>Question 8</h2>
             <form>
                 <input type="radio" name="question8" id="q8c1" value="correct">
-                <label for="q8c1"><a href="#" class="customHover">This one!</a></label><br>
+                <label for="q8c1"><a href="#;" class="customHover">This one!</a></label><br>
                 <input type="radio" name="question8" id="q8c2" value="incorrect">
-                <label for="q8c2""><a href="#">This one!</a></label><br>
+                <label for="q8c2""><a href="#;">This one!</a></label><br>
                 <input type="radio" name="question8" id="q8c3" value="incorrect">
-                <label for="q8c3"><a href="#">This one!</a></label><br>
+                <label for="q8c3"><a href="#;">This one!</a></label><br>
                 <input type="radio" name="question8" id="q8c4" value="incorrect">
-                <label for="q8c4"><a href="#">This one!</a></label><br>
+                <label for="q8c4"><a href="#;">This one!</a></label><br>
             </form>
 
             <h2>Question 9</h2>
             <form>
                 <input type="radio" name="question9" id="q9c1" value="incorrect">
-                <label for="q9c1"><a href="#">This one!</a></label><br>
+                <label for="q9c1"><a href="#;">This one!</a></label><br>
                 <input type="radio" name="question9" id="q9c2" value="incorrect">
-                <label for="q9c2"><a href="#">This one!</a></label><br>
+                <label for="q9c2"><a href="#;">This one!</a></label><br>
                 <input type="radio" name="question9" id="q9c3" value="correct">
-                <label for="q9c3"><a href="#" class="customActive">This one!</a></label><br>
+                <label for="q9c3"><a href="#;" class="customActive">This one!</a></label><br>
                 <input type="radio" name="question9" id="q9c4" value="incorrect">
-                <label for="q9c4"><a href="#">This one!</a></label><br>
+                <label for="q9c4"><a href="#;">This one!</a></label><br>
             </form>
 
             <h2>Question 10</h2>
@@ -210,24 +210,24 @@
             <h2>Question 13</h2>
             <form>
                 <input type="radio" name="question13" id="q13c1" value="incorrect">
-                <label for="q13c1"><button onclick="printNo()">This one!</button></label><br>
+                <label for="q13c1"><button type="button" class ="q13button" onclick="printNo()">This one!</button></label><br>
                 <input type="radio" name="question13" id="q13c2" value="incorrect">
-                <label for="q13c2"><button onclick="printNo()">This one!</button></label><br>
-                <input type="radio" name="question13" id="q13c3" value="incorrect">
-                <label for="q13c3"><button onclick="printYes()">This one!</a></button></label><br>
-                <input type="radio" name="question13" id="q13c4" value="correct">
-                <label for="q13c4"><button onclick="printNo()">This one!</button></label><br>
+                <label for="q13c2"><button type="button" class ="q13button" onclick="printNo()">This one!</button></label><br>
+                <input type="radio" name="question13" id="q13c3" value="correct">
+                <label for="q13c3"><button type="button" class ="q13button" onclick="printYes()">This one!</a></button></label><br>
+                <input type="radio" name="question13" id="q13c4" value="incorrect">
+                <label for="q13c4"><button type="button" class ="q13button" onclick="printNo()">This one!</button></label><br>
             </form>
 
             <h2>Question 14</h2>
             <form style="font-size: 1px;">
                 <input type="radio" name="question 14" id="q14c1" value="incorrect">
                 <label for="q14c1">This one!</label><br>
-                <input type="radio" name="question 14" id="q14c2" value="correct">
+                <input type="radio" name="question 14" id="q14c2" value="incorrect">
                 <label for="q14c2">This one!</label><br>
                 <input type="radio" name="question 14" id="q14c3" value="incorrect">
                 <label for="q14c3">This one!</label><br>
-                <input type="radio" name="question 14" id="q14c4" value="incorrect">
+                <input type="radio" name="question 14" id="q14c4" value="correct">
                 <label for="q14c4">Thls one!</label><br>
             </form>
 
@@ -235,17 +235,19 @@
             <form style="font-size: 1px;">
                 <input type="radio" name="question 15" id="q15c1" value="incorrect">
                 <label for="q15c1"></label><br>
-                <input type="radio" name="question 15" id="q15c2" value="correct">
+                <input type="radio" name="question 15" id="q15c2" value="incorrect">
                 <label for="q15c2"></label><br>
                 <input type="radio" name="question 15" id="q15c3" value="incorrect">
                 <label for="q15c3"></label><br>
-                <input type="radio" name="question 15" id="q15c4" value="incorrect">
+                <input type="radio" name="question 15" id="q15c4" value="correct">
                 <label for="q15c4"></label><br>
             </form>
+            <br><br>
+            <p id="result" style="font-size: 20px;"></p>
+            <button type="button" id="submitquiz" onclick="getScore();">SUBMIT ANSWERS</button>
         </div>
 
     </div>
-    <marquee behavior=scroll direction="left" scrollamount="100">bruh</marquee>
 </body>
 
 </html>
