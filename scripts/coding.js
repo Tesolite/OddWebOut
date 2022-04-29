@@ -40,6 +40,7 @@ function saveOptions(){
         }
     }
         optionsWindow.style.display = "none";
+        location.reload();
 }
 
 function loadOptions(){
