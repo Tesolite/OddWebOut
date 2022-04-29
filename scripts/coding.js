@@ -1,5 +1,5 @@
 function startQuiz(){
-    document.getElementById("btnstart").onclick = window.location = "quiz.html";
+    document.getElementById("btnstart").onclick = window.location.href = "quiz.html";
 
 }
 
@@ -40,6 +40,7 @@ function saveOptions(){
         }
     }
         optionsWindow.style.display = "none";
+        location.reload();
 }
 
 function loadOptions(){
