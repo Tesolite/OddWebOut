@@ -45,7 +45,6 @@ function saveOptions(){
 function loadOptions(){
     if(localStorage.getItem("dyslexicDM") == 1){
         webstyle.setAttribute("href","stylesheets/dyslexicDM.css")
-        alert(window.location.pathname);
         if(window.location.pathname == "/index.html"){
         dyslexia.checked = true;
         darkmode.checked = true;
