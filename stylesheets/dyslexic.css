@@ -119,7 +119,7 @@
 
 .menubuttons:hover {
     background: linear-gradient(rgba(231, 241, 246, 0.05), rgba(163, 224, 255, 0.75));
-    animation: changeColour 2s, rainbowz 1s infinite;
+    animation: changeColour 2s;
     animation-fill-mode: forwards;
 }
 
@@ -146,23 +146,6 @@
     cursor: pointer;
     border-radius: 10px;
     float: right;
-}
-
-@keyframes rainbowz {
-    0% {color: red;}
-    7% {color: orange;}
-    15% {color: yellow;}
-    22% {color: rgb(7, 219, 7);}
-    30% {color: blue;}
-    37% {color: indigo;}
-    45% {color: violet;}
-    53% {color: violet;}
-    60% {color: indigo;}
-    67% {color: blue;}
-    75% {color: rgb(7, 219, 7);}
-    83% {color: yellow;}
-    91% {color: orange;}
-    100% {color: red;}
 }
 
 #logo {
