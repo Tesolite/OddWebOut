@@ -69,10 +69,7 @@ function colourfulSecret(){
 
 
 function getScore(){
-
-    //The following line of code has been taken from https://stackoverflow.com/
-    //Credit to user "Get Off My Lawn" for providing this code. Link: https://stackoverflow.com/a/49639429
-    var points = document.querySelectorAll('input[type=radio][value=correct]:checked').length
+    var points = document.querySelectorAll('[value=correct]:checked').length
 
     document.getElementById("result").innerHTML = "Your final result is " + points + "/15!";
 }
