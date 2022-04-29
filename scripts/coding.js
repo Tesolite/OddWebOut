@@ -45,23 +45,12 @@ function saveOptions(){
 function loadOptions(){
     if(localStorage.getItem("dyslexicDM") == 1){
         webstyle.setAttribute("href","stylesheets/dyslexicDM.css")
-        if(window.location.pathname == "/index.html"){
-        dyslexia.checked = true;
-        darkmode.checked = true;
-        }
     }
     else if(localStorage.getItem("dyslexic") == 1){
         webstyle.setAttribute("href","stylesheets/dyslexic.css");
-        if(window.location.pathname == "/index.html"){
-            dyslexia.checked = true;
-            }
-
     }
     else if(localStorage.getItem("darkmode") == 1){
         webstyle.setAttribute("href","stylesheets/darkmode.css");
-        if(window.location.pathname == "/index.html"){
-            darkmode.checked = true;
-            }
     }
     else{
         webstyle.setAttribute("href","stylesheets/styling.css");
