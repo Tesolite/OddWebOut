@@ -1,5 +1,5 @@
 function startQuiz(){
-    document.getElementById("btnstart").onclick = window.location.href = "/quiz.html";
+    document.getElementById("btnstart").onclick = window.location.href = "quiz.html";
 
 }
 
