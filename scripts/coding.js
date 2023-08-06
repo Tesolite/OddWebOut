@@ -9,6 +9,9 @@ function showOptions(){
     if (optionsWindow.style.display == "none"){
         optionsWindow.style.display = "initial";
     }
+    else{
+        optionsWindow.style.display = "none";
+    }
 }
 
 function saveOptions(){
