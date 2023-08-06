@@ -49,12 +49,16 @@ function saveOptions(){
 function loadOptions(){
     if(localStorage.getItem("dyslexicDM") == 1){
         webstyle.setAttribute("href","stylesheets/dyslexicDM.css")
+        document.getElementById("dyslexia").checked = true;
+        document.getElementById("darkmode").checked = true;
     }
     else if(localStorage.getItem("dyslexic") == 1){
         webstyle.setAttribute("href","stylesheets/dyslexic.css");
+        document.getElementById("dyslexia").checked = true;
     }
     else if(localStorage.getItem("darkmode") == 1){
         webstyle.setAttribute("href","stylesheets/darkmode.css");
+        document.getElementById("darkmode").checked = true;
     }
     else{
         webstyle.setAttribute("href","stylesheets/styling.css");
